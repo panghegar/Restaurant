@@ -1,0 +1,184 @@
+/* NAVBAR */
+
+.navbar{
+    background-color: white;
+}
+.navbar-brand {
+    font-weight: 500;
+    font-size: 24px;
+    color: #DD2803;
+    transition: 0.3s;
+}
+
+body{
+    background-color: #F9F2EA;
+}
+
+.nav-menu{
+    color: #DD2803;
+}
+.register-button{
+    background-color: white;
+    color: #DD2803;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    /* width: 150px; */
+    margin-left: 10px;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #DD2803;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media screen and (max-width: 768px){
+    .register-button{
+        padding: 4px 6px;
+        margin-left: -20px;
+    }
+}
+
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #DD2803;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link:active:before{
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+/* NAVBAR END */
+
+/* ITS HOT */
+.itsHot {
+    width: 100%;
+    background-color: #FBE690 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.itsHot h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.row h1 {
+    font-size: 3rem;
+    margin-bottom: 3px;
+    color: #DD2803;
+}
+.itsHot button {
+    background-color: #DD2803;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 18px;
+}
+.itsHot img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .itsHot h3 {
+        font-size: 1.5rem;
+    }
+    .itsHot h1 {
+        font-size: 2rem;
+    }
+    .itsHot button {
+        font-size: 0.875rem;
+        width: 50%;
+        margin-left: 0;
+    }
+}
+/* ITS HOT END */
+
+/* CARD */
+.card{
+    transition: transform 0.3s;
+    margin-top: 50px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+/* CARD END */
+
+/* BEST MENU */
+/* .container .bestMenu{
+    border
+} */
+
+/* .bintang-best-menu-left{
+    margin-left: 500px;
+} */
+.bestMenu {
+    background-color: white; 
+    border-radius: 24px;
+}
+.smaller-img{
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* .card-bestMenu, .card-title{
+    background-color: #FBE690;
+} */
+
+.card-bestMenu{
+    background-color: #F9F2EA;
+}
+
+.btn-moreMenu{
+    margin-top: 200px;
+}
+/* BEST MENU END */
+
+/* FOLLOW US */
+.follow-us-text {
+    color: #DD2803;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Kelas tambahan untuk margin bawah tombol */
+.more-menu-button {
+    margin-bottom: 50px; /* Sesuaikan nilai margin sesuai kebutuhan */
+}
+/* FOLLOW US END*/
